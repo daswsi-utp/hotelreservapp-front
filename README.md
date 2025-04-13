@@ -18,4 +18,11 @@
   </a>
 </p>
 
+## Requirements
+> [Funtional and non-funtional](./SystemRequirements.md)
+
+## Scrum Proyect
+> [Scrum Proyect](https://github.com/orgs/daswsi-utp/projects/5/views/5)
+
+
    
