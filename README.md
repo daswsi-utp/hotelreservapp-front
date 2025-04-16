@@ -1,7 +1,7 @@
 # 🏨 Hotel Resarvation System
-<div style="display: flex; align-items: center; gap: 20px;">
-  <img src="images\logohotel.png" alt="Logo" width="100" style="border-radius: 50%;"/>
-  <h1 style="margin: 0;">Hotel Paradise</h1>      
+<div align="center">
+  <img src="images/logohotel.png" alt="Logo" width="200" style="border-radius: 50%; display: inline-block; vertical-align: middle;"/>
+  <h1 style="display: inline-block; vertical-align: middle; margin-left: 20px;">Hotel Paradise</h1>
 </div>
 
 ## 🧩 Proyect About
@@ -20,7 +20,7 @@
 ## Scrum Proyect
 > [Scrum Proyect](https://github.com/orgs/daswsi-utp/projects/5/views/5)
 
-## Steps for project installation
-> [Installation Proyect](hotelreservapp\installation.md)
+## Installation Guide
+> [Installation Proyect](./hotelreservapp/installation.md)
 
    

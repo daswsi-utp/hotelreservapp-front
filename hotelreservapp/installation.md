@@ -1,7 +1,7 @@
 # 🏨 Hotel Resarvation System
-<div style="display: flex; align-items: center; gap: 20px;">
-  <img src="src\assets\images\logohotel.png" alt="Logo" width="100" style="border-radius: 50%;"/>
-  <h1 style="margin: 0;">Hotel Paradise</h1>      
+<div align="center">
+  <img src="src/assets/images/logohotel.png" alt="Logo" width="200" style="border-radius: 50%; display: inline-block; vertical-align: middle;"/>
+  <h1 style="display: inline-block; vertical-align: middle; margin-left: 20px;">Hotel Paradise</h1>
 </div>
 
 ## 🚀 Prerequisites
@@ -32,4 +32,4 @@ npm run dev
 http://localhost:5173
 ```
 
-![Captura de mi página](src\assets\images\homepage.png)
+![Captura de mi página](./src/assets/images/homepage.png)
