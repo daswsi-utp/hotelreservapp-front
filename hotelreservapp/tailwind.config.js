@@ -4,15 +4,18 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: 'class', // Cambia a 'media' para usar el modo oscuro del sistema
+  darkMode: 'class', 
   theme: {
     extend: {
-      // Personaliza solo lo que necesites
-      colors: {
+        colors: {
         primary: {
-          DEFAULT: '#646cff',
-          hover: '#535bf2',
+          DEFAULT: '#5d8aa8',
+          hover: '#8db600',
         },
+        secondary: {
+          DEFAULT: '#f59e0b',
+        },
+        
       },
       fontFamily: {
         sans: ['Avenir', 'Helvetica', 'Arial', 'sans-serif'],
