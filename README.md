@@ -32,8 +32,8 @@ This project is a web application built with **React.js** that allows users to b
 
 1. Clone the repository:
    ```bash
-   git https://github.com/R0dn3/Reservation-Form-and-Reservation-Confirmation.git
-   cd Reservation-Form-and-Reservation-Confirmation
+   git clone https://github.com/daswsi-utp/hotelreservapp-front.git
+   cd hotelreservapp-front
 2. Install dependencies:
    `npm install`
 3. Run the app:
