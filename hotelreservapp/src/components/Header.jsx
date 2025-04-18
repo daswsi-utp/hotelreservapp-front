@@ -33,6 +33,8 @@ const Header = () => {
               <Link to="/about" className="hover:text-primary dark:hover:text-secondary">About</Link>
               <Link to="/rooms" className="hover:text-primary dark:hover:text-secondary">Rooms</Link>
               <Link to="/contact" className="hover:text-primary dark:hover:text-secondary">Contact</Link>
+              
+
             </nav>
 
             {/* Day/Night navigation mode */}
@@ -71,7 +73,7 @@ const Header = () => {
               <Link to="/about" onClick={() => setIsMenuOpen(false)} className="py-2 hover:text-primary" >About</Link>
               <Link to="/rooms" onClick={() => setIsMenuOpen(false)} className="py-2 hover:text-primary">Romms </Link>
               <Link to="/contact" onClick={() => setIsMenuOpen(false)} className="py-2 hover:text-primary">Contact</Link>
-
+              
               {/* Modelo de navegacion dia o noche */}              
               <button
                 onClick={() => setDarkMode(!darkMode)}
