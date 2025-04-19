@@ -1,0 +1,19 @@
+{
+  "name": "hotelreservapp-front",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">\r   <img src=\"images/logohotel.png\" alt=\"Logo\" width=\"200\" style=\"border-radius: 50%; display: inline-block; vertical-align: middle;\"/>\r   <h1 style=\"display: inline-block; vertical-align: middle; margin-left: 20px;\">Hotel Paradise</h1>\r </div>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daswsi-utp/hotelreservapp-front.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daswsi-utp/hotelreservapp-front/issues"
+  },
+  "homepage": "https://github.com/daswsi-utp/hotelreservapp-front#readme"
+}
