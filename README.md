@@ -13,11 +13,11 @@ This project is a web application built with **React.js** that allows users to b
 ## 📸 Screenshots
 
 ### 📋 Booking Form
-![captura-formulario](https://github.com/user-attachments/assets/15c80daf-6eec-44c8-852a-07df434e809a)
+![{34180F5F-148E-4584-BA85-8626D814314A}](https://github.com/user-attachments/assets/71c88a55-5085-4791-9264-c977462453f8)
 
 
 ### ✅ Booking Confirmation
-![captura-confirmacion](https://github.com/user-attachments/assets/9ca77591-111c-4819-880d-56e30b10a260)
+![{6E62C788-8641-487D-A25B-8181792E5CE8}](https://github.com/user-attachments/assets/37102f18-cc61-4300-9928-cc95feee5d17)
 
 
 ## 🔧 Features
