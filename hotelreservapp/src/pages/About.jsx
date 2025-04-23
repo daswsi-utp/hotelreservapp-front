@@ -36,9 +36,9 @@ const About = () => {
       <button className="book-now">Book Your Stay Now</button>
 
       <div className="gallery">
-        <img src="/assets/hotel-1.jpg" alt="Lobby" />
-        <img src="/assets/hotel-2.jpg" alt="Luxury Room" />
-        <img src="/assets/hotel-3.jpg" alt="Spa Area" />
+        <img src="/assets/images/hotel-1.jpg" alt="Lobby" />
+        <img src="/assets/images/hotel-2.webp" alt="Luxury Room" />
+        <img src="/assets/images/hotel-3.jpg" alt="Spa Area" />
       </div>
     </div>
   );
