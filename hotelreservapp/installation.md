@@ -31,5 +31,9 @@ npm run dev
 ```shell
 http://localhost:5173
 ```
+5. Local Access admin
+```shell
+http://localhost:5173/loginAdmin
+```
 
 ![Captura de mi página](./src/assets/images/homepage.png)
