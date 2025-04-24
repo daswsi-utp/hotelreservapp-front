@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FiCalendar, FiUser, FiPhone, FiMail, FiCreditCard } from "react-icons/fi"; // Para íconos
+import { FiCalendar, FiUser, FiPhone, FiMail, FiCreditCard } from "react-icons/fi";
 import '../Reservation.css';
 
 const ReservationPage = () => {
@@ -19,69 +19,65 @@ const ReservationPage = () => {
   const [selectedRoom, setSelectedRoom] = useState(null); 
   const rooms = [
     {
-      name: "Habitación Simple",
+      name: "Single Room",
       image: "/src/assets/images/hab1.jpg",
-      description: "Una habitación cómoda para una o dos personas.",
+      description: "A comfortable room for one or two people.",
       price: 100,
     },
     {
-      name: "Habitación Matrimonial",
+      name: "Double Room",
       image: "/src/assets/images/hab2.jpg",
-      description: "Ideal para parejas, con una cama grande.",
+      description: "Ideal for couples, with a large bed.",
       price: 150,
     },
     {
-      name: "Habitación Doble Estándar",
+      name: "Standard Twin Room",
       image: "/src/assets/images/hab3.jpg",
-      description: "Dos camas individuales, ideal para amigos o familiares.",
+      description: "Two single beds, ideal for friends or family.",
       price: 120,
     },
   ];
 
-  // Funcin para actualizar los datos del formulario
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  // Funcin para seleccionar habitación
   const selectRoom = (room) => {
     setSelectedRoom(room);
   };
 
-  // Funcin para avanzar al siguiente paso
   const nextStep = () => {
     if (step < 3) setStep(step + 1);
   };
 
-  // Funcin para retroceder al paso anterior
   const prevStep = () => {
     if (step > 1) setStep(step - 1);
   };
 
   return (
     <div className="container mx-auto p-6">
-      <h1 className="text-2xl font-bold text-center mb-6">Página de Reserva</h1>
+      <h1 className="text-2xl font-bold text-center mb-6">Reservation Page</h1>
 
       <div className="flex justify-center mb-6">
         <div className={`step ${step === 1 ? "active" : ""}`} onClick={() => setStep(1)}>
-          <span>Paso 1</span>
+          <span>Step 1</span>
         </div>
         <div className={`step ${step === 2 ? "active" : ""}`} onClick={() => setStep(2)}>
-          <span>Paso 2</span>
+          <span>Step 2</span>
         </div>
         <div className={`step ${step === 3 ? "active" : ""}`} onClick={() => setStep(3)}>
-          <span>Paso 3</span>
+          <span>Step 3</span>
         </div>
       </div>
 
-      {/* Paso 1*/}
+      {/* Step 1 */}
       {step === 1 && (
         <div className="step-content">
-          <h2 className="text-xl font-semibold mb-4">Paso 1: Selección de Fechas</h2>
+          <h2 className="text-xl font-semibold mb-4">Step 1: Date Selection</h2>
           <div className="flex flex-col md:flex-row justify-between">
             <div className="mb-4">
-              <label className="block text-sm font-medium mb-2">Fecha de Check-in</label>
+              <label className="block text-sm font-medium mb-2">Check-in Date</label>
               <div className="relative">
                 <FiCalendar className="absolute left-3 top-3 text-gray-400" />
                 <input
@@ -95,7 +91,7 @@ const ReservationPage = () => {
               </div>
             </div>
             <div className="mb-4">
-              <label className="block text-sm font-medium mb-2">Fecha de Check-out</label>
+              <label className="block text-sm font-medium mb-2">Check-out Date</label>
               <div className="relative">
                 <FiCalendar className="absolute left-3 top-3 text-gray-400" />
                 <input
@@ -111,20 +107,20 @@ const ReservationPage = () => {
           </div>
           <div className="flex justify-between">
             <button className="btn-prev" onClick={prevStep} disabled>
-              Atrás
+              Back
             </button>
             <button className="btn-next" onClick={nextStep}>
-              Siguiente
+              Next
             </button>
           </div>
         </div>
       )}
 
-      {/* Paso 2*/}
+      {/* Step 2 */}
       {step === 2 && (
         <div className="step-content flex justify-between">
           <div className="w-2/3">
-            <h2 className="text-xl font-semibold mb-4">Paso 2: Selección de Habitación</h2>
+            <h2 className="text-xl font-semibold mb-4">Step 2: Room Selection</h2>
             {rooms.map((room, index) => (
               <div
                 key={index}
@@ -141,30 +137,30 @@ const ReservationPage = () => {
             ))}
           </div>
 
-          {/* Sderecha*/}
+          {/* Summary */}
           <div className="w-1/3 bg-white p-6 border rounded-lg shadow-lg">
-            <h3 className="font-semibold text-xl mb-4">Resumen del Pedido</h3>
+            <h3 className="font-semibold text-xl mb-4">Order Summary</h3>
             {selectedRoom && (
               <>
                 <div className="mb-4">
-                  <h4 className="font-semibold">Habitación seleccionada:</h4>
+                  <h4 className="font-semibold">Selected Room:</h4>
                   <p>{selectedRoom.name}</p>
                   <p>{selectedRoom.description}</p>
                   <p className="font-bold text-lg">S/ {selectedRoom.price}</p>
                 </div>
                 <div className="mb-4">
-                  <label className="block text-sm font-medium mb-2">¿Tienes un cupón de descuento?</label>
+                  <label className="block text-sm font-medium mb-2">Do you have a discount code?</label>
                   <input
                     type="text"
                     name="discountCode"
                     value={formData.discountCode}
                     onChange={handleInputChange}
                     className="pl-4 pr-4 py-2 border rounded-lg w-full"
-                    placeholder="Introduce tu cupón"
+                    placeholder="Enter your code"
                   />
                 </div>
                 <button className="btn-next w-full" onClick={nextStep} disabled={!selectedRoom}>
-                  Finalizar compra
+                  Complete Purchase
                 </button>
               </>
             )}
@@ -172,13 +168,13 @@ const ReservationPage = () => {
         </div>
       )}
 
-      {/* Paso 3 */}
+      {/* Step 3 */}
       {step === 3 && (
         <div className="step-content">
-          <h2 className="text-xl font-semibold mb-4">Paso 3: Ingreso de Datos y Pago</h2>
+          <h2 className="text-xl font-semibold mb-4">Step 3: Guest Info & Payment</h2>
 
           <div className="mb-4">
-            <label className="block text-sm font-medium mb-2">Nombre</label>
+            <label className="block text-sm font-medium mb-2">First Name</label>
             <input
               type="text"
               name="name"
@@ -189,7 +185,7 @@ const ReservationPage = () => {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-sm font-medium mb-2">Apellido</label>
+            <label className="block text-sm font-medium mb-2">Last Name</label>
             <input
               type="text"
               name="lastName"
@@ -200,7 +196,7 @@ const ReservationPage = () => {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-sm font-medium mb-2">Correo Electrónico</label>
+            <label className="block text-sm font-medium mb-2">Email</label>
             <input
               type="email"
               name="email"
@@ -211,7 +207,7 @@ const ReservationPage = () => {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-sm font-medium mb-2">Número de Celular</label>
+            <label className="block text-sm font-medium mb-2">Phone Number</label>
             <input
               type="tel"
               name="phone"
@@ -223,14 +219,14 @@ const ReservationPage = () => {
           </div>
 
           <div className="mb-4">
-            <label className="block text-sm font-medium mb-2">Método de Pago</label>
+            <label className="block text-sm font-medium mb-2">Payment Method</label>
             <select
               name="paymentMethod"
               value={formData.paymentMethod}
               onChange={handleInputChange}
               className="pl-4 pr-4 py-2 border rounded-lg w-full"
             >
-              <option value="creditCard">Tarjeta de Crédito/Débito</option>
+              <option value="creditCard">Credit/Debit Card</option>
               <option value="yape">Yape/Plin</option>
               <option value="paypal">PayPal</option>
             </select>
@@ -238,10 +234,10 @@ const ReservationPage = () => {
 
           <div className="flex justify-between">
             <button className="btn-prev" onClick={prevStep}>
-              Atrás
+              Back
             </button>
             <button className="btn-submit">
-              Confirmar Pago
+              Confirm Payment
             </button>
           </div>
         </div>

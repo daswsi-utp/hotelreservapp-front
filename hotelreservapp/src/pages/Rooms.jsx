@@ -13,39 +13,39 @@ import {
 const Rooms = () => {
   const rooms = [
     {
-      title: "Habitación Simple",
+      title: "Single Room",
       image: "/src/assets/images/hab1.jpg",
       description: [
-        { icon: <FiWifi />, text: "WiFi Gratis" },
-        { icon: <FiCoffee />, text: "Desayuno Incluido" },
-        { icon: <FiTv />, text: "TV HD" },
-        { icon: <FiDroplet />, text: "Piscina" },
+        { icon: <FiWifi />, text: "Free WiFi" },
+        { icon: <FiCoffee />, text: "Breakfast Included" },
+        { icon: <FiTv />, text: "4K TV" },
+        { icon: <FiDroplet />, text: "Heated Pool" },
       ],
-      bed: "1 cama estándar",
+      bed: "1 standard bed",
       maxPersons: 2,
     },
     {
-      title: "Habitación Matrimonial",
+      title: "Double Room",
       image: "/src/assets/images/hab2.jpg",
       description: [
-        { icon: <FiWifi />, text: "WiFi Gratis" },
-        { icon: <FiCoffee />, text: "Desayuno Incluido" },
-        { icon: <FiTv />, text: "TV HD" },
-        { icon: <FiDroplet />, text: "Piscina" },
+        { icon: <FiWifi />, text: "Free WiFi" },
+        { icon: <FiCoffee />, text: "Breakfast Included" },
+        { icon: <FiTv />, text: "4K TV" },
+        { icon: <FiDroplet />, text: "Heated Pool" },
       ],
-      bed: "1 cama de 2 plazas",
+      bed: "1 double bed",
       maxPersons: 2,
     },
     {
-      title: "Habitación Doble Estándar",
+      title: "Standard Twin Room",
       image: "/src/assets/images/hab3.jpg",
       description: [
-        { icon: <FiWifi />, text: "WiFi Gratis" },
-        { icon: <FiCoffee />, text: "Desayuno Incluido" },
-        { icon: <FiTv />, text: "TV HD" },
-        { icon: <FiDroplet />, text: "Piscina" },
+        { icon: <FiWifi />, text: "Free WiFi" },
+        { icon: <FiCoffee />, text: "Breakfast Included" },
+        { icon: <FiTv />, text: "4K TV" },
+        { icon: <FiDroplet />, text: "Heated Pool" },
       ],
-      bed: "2 camas de 1 plaza",
+      bed: "2 single beds",
       maxPersons: 4,
     },
   ];
@@ -53,51 +53,51 @@ const Rooms = () => {
   return (
     <div className="container mx-auto p-6">
       <h1 className="text-2xl font-bold text-center py-6">
-        ¡Bienvenido al Hotel Paradise Arequipa, donde el encanto se une con la exclusividad!
+        Welcome to Hotel Paradise Arequipa, where charm meets exclusivity!
       </h1>
       <p className="text-lg text-center mb-6">
-        En la impresionante región sur de Perú, te damos la bienvenida al hotel más emblemático de la ciudad.
+        In the stunning southern region of Peru, we welcome you to the city's most iconic hotel.
       </p>
 
       {/* iconitos*/}
-      <h2 className="text-xl font-semibold text-center mb-4">Servicios</h2>
+      <h2 className="text-xl font-semibold text-center mb-4">Services</h2>
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 px-4 md:px-0 mb-12">
         <div className="text-center bg-amber-100 bg-opacity-90 p-4 rounded-lg shadow-md hover:bg-orange-400">
           <FiWifi size={30} className="mx-auto mb-2 text-blue-600" />
-          <p className="text-sm font-medium">WiFi Gratis</p>
+          <p className="text-sm font-medium">Free WiFi</p>
         </div>
         <div className="text-center bg-amber-100 bg-opacity-90 p-4 rounded-lg shadow-md hover:bg-gray-200">
           <FiCoffee size={30} className="mx-auto mb-2 text-yellow-500" />
-          <p className="text-sm font-medium">Desayuno Incluido</p>
+          <p className="text-sm font-medium">Breakfast Included</p>
         </div>
         <div className="text-center bg-amber-100 bg-opacity-90 p-4 rounded-lg shadow-md hover:bg-gray-200">
           <FiTv size={30} className="mx-auto mb-2 text-red-500" />
-          <p className="text-sm font-medium">TV HD</p>
+          <p className="text-sm font-medium">HD TV</p>
         </div>
         <div className="text-center bg-amber-100 bg-opacity-90 p-4 rounded-lg shadow-md hover:bg-gray-200">
           <FiDroplet size={30} className="mx-auto mb-2 text-blue-500" />
-          <p className="text-sm font-medium">Piscina</p>
+          <p className="text-sm font-medium">Pool</p>
         </div>
         <div className="text-center bg-amber-100 bg-opacity-90 p-4 rounded-lg shadow-md hover:bg-gray-200">
           <FiShoppingCart size={30} className="mx-auto mb-2 text-green-600" />
-          <p className="text-sm font-medium">Tienda</p>
+          <p className="text-sm font-medium">Shop</p>
         </div>
         <div className="text-center bg-amber-100 bg-opacity-90 p-4 rounded-lg shadow-md hover:bg-gray-200">
           <FiCreditCard size={30} className="mx-auto mb-2 text-purple-600" />
-          <p className="text-sm font-medium">Pago Seguro</p>
+          <p className="text-sm font-medium">Secure Payment</p>
         </div>
         <div className="text-center bg-amber-100 bg-opacity-90 p-4 rounded-lg shadow-md hover:bg-gray-200">
           <FiPhone size={30} className="mx-auto mb-2 text-orange-600" />
-          <p className="text-sm font-medium">Servicio Telefónico</p>
+          <p className="text-sm font-medium">Phone Service</p>
         </div>
         <div className="text-center bg-amber-100 bg-opacity-90 p-4 rounded-lg shadow-md hover:bg-gray-200">
           <FiMapPin size={30} className="mx-auto mb-2 text-teal-600" />
-          <p className="text-sm font-medium">Ubicación Estratégica</p>
+          <p className="text-sm font-medium">Strategic Location</p>
         </div>
       </div>
 
       {/* hab */}
-      <h2 className="text-2xl font-bold text-center mb-6">Nuestras Habitaciones</h2>
+      <h2 className="text-2xl font-bold text-center mb-6">Our Rooms</h2>
       <div className="space-y-10">
         {rooms.map((room, index) => (
           <div key={index} className="flex flex-col md:flex-row bg-amber-100 bg-opacity-90 shadow-md rounded-lg overflow-hidden">
@@ -113,7 +113,7 @@ const Rooms = () => {
             <div className="md:w-1/2 p-6 flex flex-col justify-between">
               <div>
                 <h3 className="text-xl font-semibold mb-2">{room.title}</h3>
-                <p className="text-gray-600 mb-4">Máximo {room.maxPersons} personas</p>
+                <p className="text-gray-600 mb-4">Max {room.maxPersons} people</p>
                 <ul className="space-y-2">
                   {room.description.map((item, idx) => (
                     <li key={idx} className="flex items-center text-gray-700">
@@ -123,13 +123,13 @@ const Rooms = () => {
                   ))}
                 </ul>
               </div>
-              <p className="mt-4 font-medium text-sm text-gray-500">Cama: {room.bed}</p>
+              <p className="mt-4 font-medium text-sm text-gray-500">Bed: {room.bed}</p>
             </div>
           </div>
         ))}
       </div>
 
-      {/* srvicios*/}
+      {/* servicios*/}
       <div className="flex flex-col md:flex-row items-center mt-16 bg-amber-100 bg-opacity-90 p-8 rounded-lg shadow-lg border border-black">
         <div className="md:w-1/2 mb-6 md:mb-0 aspect-w-1 aspect-h-1">
           <img
@@ -140,7 +140,7 @@ const Rooms = () => {
         </div>
 
         <div className="md:w-1/2 p-6 bg-amber-100 bg-opacity-90 rounded-lg border border-black shadow-md">
-          <h2 className="text-2xl font-semibold mb-4">Servicios</h2>
+          <h2 className="text-2xl font-semibold mb-4">Services</h2>
 
           <div className="grid grid-cols-4 gap-4 mb-4">
             <FiWifi size={30} className="mx-auto text-yellow-600" />
@@ -150,24 +150,23 @@ const Rooms = () => {
           </div>
 
           <ul className="space-y-2 text-gray-700">
-            <li>- Desayuno buffet de 6:00 hrs – 10:00 hrs</li>
-            <li>- Bar abierto hasta las 22 hrs</li>
-            <li>- Check in 13:00 hrs</li>
-            <li>- Check out 12:00 hrs</li>
-            <li className="text-center font-bold">WiFi de cortesía en las habitaciones y áreas públicas</li>
-            <li className="text-center font-bold">Estacionamiento de cortesía sujeto a disponibilidad</li>
-            <li>- Salones para eventos con capacidad para 250 personas</li>
-            <li>- Servicio de lavandería de costo</li>
-            <li>- Tienda de souvenirs</li>
+            <li>- Buffet breakfast from 6:00 am – 10:00 am</li>
+            <li>- Open bar until 10:00 pm</li>
+            <li>- Check-in at 1:00 pm</li>
+            <li>- Check-out at 12:00 pm</li>
+            <li className="text-center font-bold">Complimentary WiFi in rooms and public areas</li>
+            <li className="text-center font-bold">Complimentary parking subject to availability</li>
+            <li>- Event halls with capacity for 250 people</li>
+            <li>- Paid laundry service</li>
+            <li>- Souvenir shop</li>
             <li>- Business Center</li>
-            <li>- Habitaciones para no fumadores</li>
-            <li>- Departamento de custodia</li>
-            <li>- Personal de seguridad 24h</li>
-            <li>- Personal bilingüe</li>
+            <li>- Non-smoking rooms</li>
+            <li>- Luggage storage department</li>
+            <li>- 24h security staff</li>
+            <li>- Bilingual staff</li>
           </ul>
         </div>
       </div>
-
     </div>
   );
 };
