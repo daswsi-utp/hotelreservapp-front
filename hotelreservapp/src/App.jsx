@@ -6,6 +6,7 @@ import AdminPanel from './pages/AdminPanel';
 import LoginAdmin from './pages/LoginAdmin';
 
 
+
 function App() {
   return (
     <Router>
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" element={<Home />} />            
             <Route path="/AdminPanel" element={<AdminPanel />} />
             <Route path="/loginAdmin" element={<LoginAdmin />} />
+            
           </Routes>
         </main>
         <Footer />
