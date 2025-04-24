@@ -128,7 +128,7 @@ const FormularioReserva = () => {
                       value={tipo}
                       checked={formData.habitacion === tipo}
                       onChange={handleChange}
-                      required={index === 0} // 👈 solo el primero lleva required
+                      required={index === 0} 
                     />
                     <span className="font-semibold">{tipo}</span>
                     <span className="text-gray-500">
