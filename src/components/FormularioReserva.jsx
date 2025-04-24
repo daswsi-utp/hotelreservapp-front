@@ -26,6 +26,12 @@ const FormularioReserva = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!formData.habitacion) {
+      alert("Por favor, selecciona un tipo de habitación.");
+      return;
+    }
+
     navigate("/confirmacion", { state: formData });
   };
 
@@ -114,7 +120,7 @@ const FormularioReserva = () => {
                   { tipo: "Estandar", precio: 89 },
                   { tipo: "Suite", precio: 129 },
                   { tipo: "De lujo", precio: 199 },
-                ].map(({ tipo, precio }) => (
+                ].map(({ tipo, precio }, index) => (
                   <label key={tipo} className="flex items-center gap-2 text-sm">
                     <input
                       type="radio"
@@ -122,6 +128,7 @@ const FormularioReserva = () => {
                       value={tipo}
                       checked={formData.habitacion === tipo}
                       onChange={handleChange}
+                      required={index === 0} // 👈 solo el primero lleva required
                     />
                     <span className="font-semibold">{tipo}</span>
                     <span className="text-gray-500">
@@ -129,6 +136,7 @@ const FormularioReserva = () => {
                     </span>
                   </label>
                 ))}
+
               </div>
             </div>
 
