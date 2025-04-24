@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import AdminPanel from './pages/AdminPanel';
 import Rooms from './pages/Rooms';
 import Reservation from './pages/Reservation';
-
+import LoginAdmin from './pages/LoginAdmin';
 
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
             <Route path="/AdminPanel" element={<AdminPanel />} />
             <Route path="/Rooms" element={<Rooms />} />
             <Route path="/Reservation" element={<Reservation />} />
+            <Route path="/loginAdmin" element={<LoginAdmin />} />
           </Routes>
         </main>
         <Footer />
