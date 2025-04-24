@@ -62,35 +62,35 @@ const Rooms = () => {
       {/* iconitos*/}
       <h2 className="text-xl font-semibold text-center mb-4">Services</h2>
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 px-4 md:px-0 mb-12">
-        <div className="text-center bg-amber-100 bg-opacity-90 p-4 rounded-lg shadow-md hover:bg-orange-400">
+        <div className="text-center bg-blue-100 p-4 rounded-lg shadow-md hover:bg-orange-400">
           <FiWifi size={30} className="mx-auto mb-2 text-blue-600" />
           <p className="text-sm font-medium">Free WiFi</p>
         </div>
-        <div className="text-center bg-amber-100 bg-opacity-90 p-4 rounded-lg shadow-md hover:bg-gray-200">
+        <div className="text-center bg-blue-100 p-4 rounded-lg shadow-md hover:bg-gray-200">
           <FiCoffee size={30} className="mx-auto mb-2 text-yellow-500" />
           <p className="text-sm font-medium">Breakfast Included</p>
         </div>
-        <div className="text-center bg-amber-100 bg-opacity-90 p-4 rounded-lg shadow-md hover:bg-gray-200">
+        <div className="text-center bg-blue-100 p-4 rounded-lg shadow-md hover:bg-gray-200">
           <FiTv size={30} className="mx-auto mb-2 text-red-500" />
           <p className="text-sm font-medium">HD TV</p>
         </div>
-        <div className="text-center bg-amber-100 bg-opacity-90 p-4 rounded-lg shadow-md hover:bg-gray-200">
+        <div className="text-center bg-blue-100 p-4 rounded-lg shadow-md hover:bg-gray-200">
           <FiDroplet size={30} className="mx-auto mb-2 text-blue-500" />
           <p className="text-sm font-medium">Pool</p>
         </div>
-        <div className="text-center bg-amber-100 bg-opacity-90 p-4 rounded-lg shadow-md hover:bg-gray-200">
+        <div className="text-center bg-blue-100 p-4 rounded-lg shadow-md hover:bg-gray-200">
           <FiShoppingCart size={30} className="mx-auto mb-2 text-green-600" />
           <p className="text-sm font-medium">Shop</p>
         </div>
-        <div className="text-center bg-amber-100 bg-opacity-90 p-4 rounded-lg shadow-md hover:bg-gray-200">
+        <div className="text-center bg-blue-100 p-4 rounded-lg shadow-md hover:bg-gray-200">
           <FiCreditCard size={30} className="mx-auto mb-2 text-purple-600" />
           <p className="text-sm font-medium">Secure Payment</p>
         </div>
-        <div className="text-center bg-amber-100 bg-opacity-90 p-4 rounded-lg shadow-md hover:bg-gray-200">
+        <div className="text-center bg-blue-100 p-4 rounded-lg shadow-md hover:bg-gray-200">
           <FiPhone size={30} className="mx-auto mb-2 text-orange-600" />
           <p className="text-sm font-medium">Phone Service</p>
         </div>
-        <div className="text-center bg-amber-100 bg-opacity-90 p-4 rounded-lg shadow-md hover:bg-gray-200">
+        <div className="text-center bg-blue-100 p-4 rounded-lg shadow-md hover:bg-gray-200">
           <FiMapPin size={30} className="mx-auto mb-2 text-teal-600" />
           <p className="text-sm font-medium">Strategic Location</p>
         </div>
@@ -100,7 +100,7 @@ const Rooms = () => {
       <h2 className="text-2xl font-bold text-center mb-6">Our Rooms</h2>
       <div className="space-y-10">
         {rooms.map((room, index) => (
-          <div key={index} className="flex flex-col md:flex-row bg-amber-100 bg-opacity-90 shadow-md rounded-lg overflow-hidden">
+          <div key={index} className="flex flex-col md:flex-row BG-WHITE shadow-md rounded-lg overflow-hidden">
             <div className="md:w-1/2">
               <img
                 src={room.image}
@@ -130,7 +130,7 @@ const Rooms = () => {
       </div>
 
       {/* servicios*/}
-      <div className="flex flex-col md:flex-row items-center mt-16 bg-amber-100 bg-opacity-90 p-8 rounded-lg shadow-lg border border-black">
+      <div className="flex flex-col md:flex-row items-center mt-16 bg-white p-8 rounded-lg shadow-lg ">
         <div className="md:w-1/2 mb-6 md:mb-0 aspect-w-1 aspect-h-1">
           <img
             src="/src/assets/images/buffet.jpg" 
