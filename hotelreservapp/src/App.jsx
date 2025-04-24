@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import AdminPanel from './pages/AdminPanel';
-
+import LoginAdmin from './pages/LoginAdmin';
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />            
             <Route path="/AdminPanel" element={<AdminPanel />} />
-
+            <Route path="/loginAdmin" element={<LoginAdmin />} />
           </Routes>
         </main>
         <Footer />
