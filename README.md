@@ -11,16 +11,6 @@ This project is a web application built with **React.js** that allows users to b
 - 🔄 React Router DOM
 - 💡 React Icons
 
-## 📸 Screenshots
-
-### 📋 Booking Form
-![{5DDA588C-9A23-4FD0-BBE5-F0D0E1DA0171}](https://github.com/user-attachments/assets/f85ae583-ff6c-46ca-a0b6-8b8fe4a18104)
-
-
-### ✅ Booking Confirmation
-![{74B43EBA-B636-42FF-A1FE-345C762C06D6}](https://github.com/user-attachments/assets/b43def12-52f7-4e85-b466-ffc7592646df)
-
-
 ## 🔧 Features
 
 - Interactive form with input validation.
@@ -38,7 +28,7 @@ This project is a web application built with **React.js** that allows users to b
 2. Install dependencies:
    `npm install`
 3. Run the app:
-   `npm start`
+   `npm run dev`
 =======
 # 🏨 Hotel Reservation System
 <div align="center">
