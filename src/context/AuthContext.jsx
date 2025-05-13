@@ -21,6 +21,7 @@ export const AuthProvider = ({ children }) => {
 
   // Mock login function
   const login = (email, password) => {
+    // For demo, we're using hardcoded admin credentials
     if (email === 'admin@hotelparadise.com' && password === 'admin123') {
       const user = {
         id: 1,

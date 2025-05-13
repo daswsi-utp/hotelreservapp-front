@@ -48,11 +48,13 @@ const AddRoomPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // Validación simple
     if (!name || !type || !description || !price || !size || imageUrls.filter(url => url).length === 0) {
       alert('Por favor, rellene todos los campos obligatorios.');
       return;
     }
 
+    // Para fines de demostración, simplemente vuelva a la administración de salas
     alert('¡Habitación añadida correctamente!');
     browse('/admin/rooms');
   };

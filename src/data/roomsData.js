@@ -7,7 +7,7 @@ export const rooms = [
     description: "Indulge in luxury with our Deluxe Ocean View room, featuring panoramic views of the crystal blue waters, a king-size bed with premium linens, elegant furnishings, and a spacious marble bathroom with deep soaking tub and separate rain shower.",
     price: 350,
     capacity: 2,
-    size: 45, 
+    size: 45, // in square meters
     amenities: ["King bed", "Ocean view", "Air conditioning", "Free WiFi", "Minibar", "40-inch TV", "Coffee machine", "Safe", "Luxury toiletries"],
     images: [
       "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg",
@@ -24,7 +24,7 @@ export const rooms = [
     description: "Our most prestigious accommodation, the Royal Suite offers unparalleled luxury with a separate living room, dining area, and two bedrooms. Enjoy breathtaking panoramic ocean views, a private balcony, and exclusive access to our Executive Lounge.",
     price: 850,
     capacity: 4,
-    size: 120, 
+    size: 120, // in square meters
     amenities: ["2 Bedrooms", "Living room", "Dining area", "Private balcony", "Ocean view", "Air conditioning", "Free WiFi", "Full-size minibar", "65-inch TV", "Espresso machine", "Safe", "Luxury bathroom", "Bathrobe & slippers", "Executive lounge access"],
     images: [
       "https://images.pexels.com/photos/1743231/pexels-photo-1743231.jpeg",
@@ -41,7 +41,7 @@ export const rooms = [
     description: "Relax in our comfortable Garden View Room, featuring lush tropical garden views, a queen-size bed, modern amenities, and a cozy atmosphere perfect for unwinding after a day of exploring.",
     price: 220,
     capacity: 2,
-    size: 35, 
+    size: 35, // in square meters
     amenities: ["Queen bed", "Garden view", "Air conditioning", "Free WiFi", "Minibar", "32-inch TV", "Coffee maker", "Safe"],
     images: [
       "https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg",
@@ -58,7 +58,7 @@ export const rooms = [
     description: "Perfect for families, our spacious Family Suite offers a master bedroom with a king-size bed and a second bedroom with twin beds. Includes a comfortable living area, dining space, and all the amenities needed for a memorable family vacation.",
     price: 550,
     capacity: 5,
-    size: 85, 
+    size: 85, // in square meters
     amenities: ["Master bedroom with king bed", "Second bedroom with twin beds", "Living area", "Dining space", "Air conditioning", "Free WiFi", "Minibar", "50-inch TV", "Coffee maker", "Safe", "Family bathroom"],
     images: [
       "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg",
@@ -75,7 +75,7 @@ export const rooms = [
     description: "Designed for business travelers, our Executive Room offers a comfortable work space, high-speed internet, a king-size bed, and access to our Executive Lounge with complimentary breakfast and evening cocktails.",
     price: 400,
     capacity: 2,
-    size: 40, 
+    size: 40, // in square meters
     amenities: ["King bed", "Work desk", "Air conditioning", "High-speed WiFi", "Minibar", "42-inch TV", "Coffee machine", "Safe", "Executive lounge access"],
     images: [
       "https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg",
@@ -92,7 +92,7 @@ export const rooms = [
     description: "Celebrate your special moments in our romantic Honeymoon Suite, featuring a luxurious king-size canopy bed, a private balcony with ocean views, a champagne bar, and a deep soaking tub for two.",
     price: 750,
     capacity: 2,
-    size: 70, 
+    size: 70, // in square meters
     amenities: ["King canopy bed", "Private balcony", "Ocean view", "Air conditioning", "Free WiFi", "Champagne bar", "55-inch TV", "Espresso machine", "Safe", "Deep soaking tub for two", "Luxury toiletries", "Rose petal turndown service"],
     images: [
       "https://images.pexels.com/photos/3754594/pexels-photo-3754594.jpeg",
