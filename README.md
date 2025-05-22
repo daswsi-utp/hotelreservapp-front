@@ -42,7 +42,7 @@ Make sure you have Docker installed. Then run:
 `npm install`
 `npm run dev`
 
-## 🖼️ command execution captures
+## 🖼️ Captures of command executions and test executions
 
 ### 1. 🔃 Running Redis with Docker and Running the Backend
 ![image](https://github.com/user-attachments/assets/1fecde00-6445-4f43-a8e8-b52269341b30)
