@@ -25,3 +25,19 @@ In this part of the project the focus is on the messaging module.
 - 📦 Maven
 - 🧪 Postman for testing
 
+## ▶️ Execution Commands
+
+### 1. 🔃 running Redis with Docker
+
+Make sure you have Docker installed. Then run:
+
+`docker run -p 6379:6379 redis`
+
+### 2. 🔃 Running the Backend
+
+`./mvnw spring-boot:run`
+
+### 3. 🔃 Running the Frontend
+
+`npm install`
+`npm run dev`
