@@ -27,7 +27,7 @@ In this part of the project the focus is on the messaging module.
 
 ## ▶️ Execution Commands
 
-### 1. 🔃 running Redis with Docker
+### 1. 🔃 Running Redis with Docker
 
 Make sure you have Docker installed. Then run:
 
